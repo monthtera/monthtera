@@ -1,0 +1,4 @@
+django
+pygraphviz
+django-extensions
+django-allauth

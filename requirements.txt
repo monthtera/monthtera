@@ -1,5 +1,5 @@
 django
-pygraphviz
 django-extensions
 django-allauth
 django-debug-toolbar
+django-material

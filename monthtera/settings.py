@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'pages',
     'users',
     'debug_toolbar',
+    'material',
 ]
 
 MIDDLEWARE = [

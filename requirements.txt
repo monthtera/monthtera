@@ -3,3 +3,5 @@ django-extensions
 django-allauth
 django-debug-toolbar
 django-material
+django-taggit
+ipython

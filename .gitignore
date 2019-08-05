@@ -1,6 +1,6 @@
 venv/
 .idea/
 db.sqlite3
-googleid.txt
+social_login_id.txt
 sent_emails/
 

@@ -1,11 +1,12 @@
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
 
-from monthtera.categories.models import Category
+from ..categories.models import Category
 
 
 class Brand(models.Model):
-    name = models.CharField(max_length=30)
-    description = models.TextField()
+    name = models.CharField(_("Name"), max_length=30)
+    description = models.TextField(_("Description"))
     categories = models.ManyToManyField(Category)
 
     def __str__(self):

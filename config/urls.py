@@ -8,6 +8,9 @@ from rest_framework import routers
 
 from monthtera.categories.views import CategoryViewSet
 from monthtera.brands.views import BrandViewSet
+from monthtera.items.views import ItemViewset
+from monthtera.subscriptions.views import SubscriptionViewset
+from monthtera.posts.views import PostViewset
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -25,6 +28,9 @@ urlpatterns = [
 router = routers.DefaultRouter()
 router.register('categories', CategoryViewSet)
 router.register('brands', BrandViewSet)
+router.register('items', ItemViewset)
+router.register('subscriptions', SubscriptionViewset)
+router.register('posts', PostViewset)
 urlpatterns += router.urls
 
 if settings.DEBUG:

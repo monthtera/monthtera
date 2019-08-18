@@ -1,0 +1,14 @@
+from django.shortcuts import render
+from rest_framework import viewsets
+
+from .models import Subscription
+from .serializers import SubscriptionSerializer
+
+
+class SubscriptionViewset(viewsets.ModelViewSet):
+    queryset = Subscription.objects.all()
+    serializer_class = SubscriptionSerializer
+
+
+def subscriptions(request):
+    return Subscription.objects.all()

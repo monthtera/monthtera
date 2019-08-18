@@ -74,6 +74,7 @@ THIRD_PARTY_APPS = [
     "allauth.socialaccount.providers.google",
     "allauth.socialaccount.providers.kakao",
     "rest_framework",
+    'djmoney',
 ]
 
 LOCAL_APPS = [
@@ -81,6 +82,9 @@ LOCAL_APPS = [
     # Your stuff: custom apps go here
     "monthtera.categories.apps.CategoriesConfig",
     "monthtera.brands.apps.BrandsConfig",
+    "monthtera.items.apps.ItemsConfig",
+    "monthtera.subscriptions.apps.SubscriptionsConfig",
+    "monthtera.posts.apps.PostsConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
